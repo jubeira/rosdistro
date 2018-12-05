@@ -6,6 +6,22 @@ release_platforms:
   ubuntu:
   - xenial
 repositories:
+  class_loader:
+    doc:
+      type: git
+      url: https://github.com/ros/class_loader.git
+      version: indigo-devel
+    release:
+      tags:
+        release: release/indigo/{package}/{version}
+      url: https://github.com/ros-gbp/class_loader-release.git
+      version: 0.3.9-0
+    source:
+      test_pull_requests: true
+      type: git
+      url: https://github.com/ros/class_loader.git
+      version: indigo-devel
+    status: maintained
   ecl_core:
     doc:
       type: git
